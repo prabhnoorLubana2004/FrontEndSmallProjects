@@ -1,0 +1,50 @@
+.two-boxes, .three-boxes, .three-unequal-boxes, .four-equal-boxes, .footer {
+    display: flex;
+    flex-direction: row;
+    background-color: skyblue;
+    margin: 10px;
+    padding: 12px;
+    gap: 12px;
+}
+
+.two-boxes div, .three-boxes div, .three-unequal-boxes div, .four-equal-boxes div, .footer div {
+    background-color: grey;
+    height: 50px;
+    width: 100%;
+    flex: 1;
+}
+
+.three-unequal-boxes div, .four-equal-boxes div, .footer div 
+{
+    border: 2px solid black;
+}
+
+.two-boxes {
+    gap: 10px;
+}
+
+.three-boxes {
+    gap: 15px;
+}
+
+/* Adding gap to the three unequal boxes */
+.three-unequal-boxes {
+    gap: 12px;
+}
+
+/* Adding gap to the three unequal  boxes */
+.three-unequal-boxes div:nth-child(1) {
+    flex: 2;
+}
+
+/* Adding margin to the  for equal boxes */
+.four-equal-boxes {
+    margin: 10px 10px 0px 10px;
+    
+}
+
+/* Adding margin to the footer */
+.foot{
+    margin: 0px 10px 10px 10px;
+    padding-top: 0;
+}
